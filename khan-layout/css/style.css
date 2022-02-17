@@ -1,0 +1,163 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  background: white;
+  color: black;
+  font: 62.5% Verdana, sans-serif;
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  border-bottom: 1px solid #d6d8da;
+  position: relative;
+  height: 55px;
+  padding: 0 10%;
+}
+
+.nav-link {
+  float: left;
+  width: 8.3333%;
+  font-size: 140%;
+  color: #1865f2;
+  padding: 1%;
+  margin: 0.5%;
+}
+
+.search-input {
+  background: #f0f1f2;
+  border: 0;
+  margin: 0.75% 0;
+}
+
+input::placeholder {
+  color: #1865f2;
+  font-weight: bold;
+}
+
+.search {
+  width: 14%;
+  padding: 0.75%;
+}
+
+.glass {
+  float: left;
+  width: 2.8%;
+}
+
+.logo {
+  color: #052462;
+  font-size: 180%;
+  width: 14%;
+  padding: 0.53%;
+  margin-top: 0.7%;
+  margin-left: 10%;
+  margin-right: 15%;
+}
+
+.logo:hover {
+  color: #1865f2;
+}
+
+main {
+  position: relative;
+  height: 800px;
+  margin: 5% 18% 5% 12%;
+}
+
+.hero-img,
+.hero
+ {
+  float: left;
+  width: 50%;
+}
+
+.hero {
+  padding: 2% 5% 2% 2%;
+  position: relative;
+}
+
+h1 {
+  font: 500% Georgia, sans-serif;
+  margin-bottom: 0;
+}
+
+.header-content, 
+p {
+  position: relative;
+  margin-bottom: 5%;
+}
+
+.underline {
+  position: absolute;
+  width: 65%;
+  left: -2%;
+  bottom: -3%;
+}
+
+p {
+  font-size: 150%;
+  line-height: 2;
+}
+
+.link-button {
+  float: left;
+  width: 20%;
+  padding: 2%;
+  background: #1865f2;
+  color: white;
+  border-radius: 4px;
+  font-size: 115%;
+  margin: 1.25%;
+  text-align: center;
+}
+
+.link-button:first-of-type {
+  margin-left: 0;
+}
+
+.link-button:hover {
+  box-shadow: 0 0 0 1px white, 0 0 0 3px #1865f2;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

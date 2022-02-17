@@ -1,0 +1,241 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  background: white;
+  color: black;
+  font: 62.5% Verdana, sans-serif;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+span {
+  color: #5b5b5b;
+  font-weight: bold;
+}
+
+time {
+  color: #828282;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  left: 0;
+  top: 0;
+  width: 15%;
+  min-height: 100vh;
+  position: relative;
+  margin: 0;
+  display: inline-block;
+  line-height: 2;
+}
+
+nav {
+  position: fixed;
+  min-height: 100%;
+  width: 15%;
+  float: left;
+  padding: 1.5%;
+  font-size: 175%;
+}
+
+nav a {
+  color: #9b9b9b;
+}
+
+nav a:hover {
+  color: #0ba969;
+}
+
+.logo-box {
+  line-height: 1.5;
+  margin-bottom: 10%;
+}
+
+.extra-crunch,
+.join-extra-crunch {
+  color: #f6a721;
+  font-size: 125%;
+  font-weight: bold;
+}
+
+.extra-crunch {
+  margin: 1% 0 0 0;
+}
+
+.join-extra-crunch {
+  font: 75% "Lucida Console", sans-serif;
+}
+
+.join-extra-crunch:hover,
+.extra-crunch-link:hover,
+.extra-crunch:hover {
+  color: #dfad4c;
+}
+
+.login {
+  font-size: 75%;
+  color: #7d7d7d;
+}
+
+.search:hover {
+  color: #9b9b9b;
+}
+
+.search img {
+  width: 12.5%;
+}
+
+.logo img{
+  width: 40%;
+  display: block;
+}
+
+main {
+  float: right;
+  width: 85%;
+  line-height: 1.2;
+}
+
+main a {
+  color: black;
+}
+
+.hero {
+  float: left;
+  width: 60%;
+  padding-right: 5%;
+}
+
+.hero h1 {
+  font-size: 300%;
+  font-weight: bold;
+  margin: 0 0 2% 0;
+}
+
+.hero p {
+  color: #a3a3a3;
+  font-size: 130%;
+  margin: 1% 0;
+}
+
+.hero img {
+  margin-top: 1%;
+  width: 100%;
+}
+
+.side-stories {
+  float: left;
+  width: 38.5%;
+}
+
+.side-stories h2 {
+  font-size: 200%;
+  font-weight: bold;
+}
+
+.side-story {
+  border-bottom: 1px solid lightgray;
+  margin-right: 1.5%;
+  padding-bottom: 1%;
+}
+
+.side-story:last-of-type {
+  border-bottom: 0;
+}
+
+.hero:hover,
+.side-story:hover,
+.latest-story:hover {
+  transition: opacity 0.3s linear;
+  opacity: 70%;
+}
+
+.side-story:hover {
+  opacity: 50%;
+}
+
+.latest {
+  float: left;
+  width: 100%;
+}
+
+.latest h5 {
+  font-size: 125%;
+  font-weight: bold;
+  margin-bottom: 1.5%;
+}
+
+.latest-story {
+  border-top: 1px solid lightgray;
+  padding-top: 2%;
+  margin-right: 1.5%;
+}
+
+.latest-story section {
+  float: left;
+  width: 30%;
+  margin-right: 3.3333%;
+}
+
+.latest-story section:last-of-type {
+  margin-right: 0;
+}
+
+.latest-story-title h2 {
+  font-size: 200%;
+  font-weight: bold;
+  margin-top: 0;
+  vertical-align: top;
+}
+
+.latest-story-title time {
+  display: block;
+  margin-top: 1%;
+}
+
+.latest-story-text p {
+  margin-top: 0;
+  color: #a3a3a3;
+  font-size: 130%;
+}
+
+.latest-story-title span {
+  display: block;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

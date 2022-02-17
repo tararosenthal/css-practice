@@ -1,0 +1,335 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  background: white;
+  color: black;
+  font-size: 62.5%;
+  font-family: "Cinzel", serif;
+}
+
+.primary-section {
+  padding: 10rem 15rem;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+  line-height: 2;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  display: inline-block;
+}
+
+.offset {
+  background: black;
+  color: white;
+}
+
+a {
+  font-size: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 6rem;
+  color: white;
+}
+
+h2 {
+  color: white;
+}
+
+h3 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+h4 {
+  font-size: 1.6rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+span {
+  font-size: 1.2rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.logo {
+  font-family: "Dancing Script", serif;
+  font-weight: bold;
+}
+
+.offset-reverse {
+  background: white;
+  color: black;
+}
+
+.number {
+  font-size: 2rem;
+  font-weight: bold;
+  display: inline;
+}
+
+.button {
+  padding: 1rem 1.5rem;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  padding: 1rem 5rem;
+}
+
+header * {
+  font-size: 1rem;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.6rem;
+}
+
+header .material-icons-outlined {
+  font-size: 1.2rem;
+  padding: 0;
+  margin: 0;
+}
+
+header ul {
+  flex-basis: 70%;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  background: url("../assets/lwl homework/hero-bg-curve.png") 0 0 no-repeat;
+  background-size: contain;
+  padding: 10rem 10rem 0 10rem;
+}
+
+h1 {
+  max-width: 75%;
+  margin-bottom: 0;
+} 
+
+h2,
+.hero > a,
+.hero aside {
+  margin-left: 0.5rem;
+}
+
+main h2 {
+  letter-spacing: 0.25rem;
+  margin-bottom: 2.5rem;
+}
+
+aside.column {
+  margin-top: 2.5rem;
+  width: 300px;
+  height: 325px;
+  padding: 2.5rem 1.5rem;
+}
+
+.offer {
+  line-height: 2;
+}
+
+aside a {
+ width: 65%;
+}
+
+aside h6 {
+  margin: 0;
+}
+
+.services {
+  padding: 10rem 5rem 0 5rem;
+  text-align: center;
+  padding-bottom: 10rem;
+}
+
+.service {
+  justify-content: space-evenly;
+}
+
+.service:nth-of-type(n+2) {
+  margin-left: 2rem;
+}
+
+.momentum {
+  background: #f3f4f6;
+}
+
+.momentum div {
+  flex-basis: 49%;
+  justify-content: space-evenly;
+}
+
+.momentum img {
+  width: 100%;
+}
+
+.momentum .button {
+  max-width: 40%;
+  text-align: center;
+}
+
+.momentum figure {
+  position: relative;
+}
+
+.momentum figcaption {
+  position: absolute; 
+  top: 45%;
+  left: 0%;
+  width: 100%;
+  text-align: center;
+}
+
+.momentum .material-icons-outlined {
+  border-radius: 50%;
+  padding: 0.5rem;
+  box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.25), 0 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+.stylists {
+  justify-content: space-between;
+}
+
+.stylist figure {
+  height: 450px;
+  margin: 0;
+  position: relative;
+}
+
+.stylist img {
+  height: 100%;
+}
+
+.stylist figcaption {
+ position: absolute;
+ height: 100px;
+ width: 250px;
+ text-align: center;
+ padding: 2rem 0;
+ top: 400px;
+ left: 30px;
+}
+
+.stylist figcaption span {
+  display: block;
+}
+
+.stylist figcaption span:nth-child(2) {
+  font-size: 0.75rem;
+}
+
+.coupon {
+  background: url("../assets/lwl homework/Aesthetik-dresDermal\ 1-1.webp") top right no-repeat, linear-gradient(#d7d7d9, #eeecec, #fafafa);
+  background-size: contain;
+  height: 450px;
+  margin: 10rem 15rem;
+  justify-content: center;
+}
+
+.coupon aside {
+  margin: 0;
+}
+
+.darker {
+  font-weight: 600;
+}
+
+aside a.button {
+  width: 100%;
+  text-align: center;
+}
+
+.lookbook {
+  text-align: center;
+}
+
+.lookbook h3 {
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.looks img {
+  width: 30%;
+}
+
+.looks :nth-child(2) img {
+  margin-bottom: -200px;
+}
+
+.looks :nth-child(even) img {
+  height: 400px;
+  object-fit: cover;
+}
+
+.looks :nth-child(odd) img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.looks :nth-child(1) img,
+.looks :nth-child(5) img {
+  object-position: 100% 50%;
+}
+
+.looks :nth-child(4) img {
+  object-position: 75% 50%;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

@@ -1,0 +1,311 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font-size: 65.25%;
+  color: #4a4a4a;
+  background: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding: 0 8rem;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #8c8c8c;
+}
+
+a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.cat-link {
+  text-transform: capitalize;
+  border-left: 2px solid red;
+  padding-left: 0.5rem;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+/*
+* Header
+*/
+header {
+  padding-top: 00.5rem;
+  padding-bottom: 00.5rem;
+  width: 100%;
+  height: 35px;
+  line-height: 25px;
+  position: relative;
+  background: black;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  background: black;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  width: 100vw;
+  margin-left: -50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  background: black;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  width: 100vw;
+  margin-right: -50%;
+  transform: translateX(50%);
+  z-index: -1;
+}
+
+ul {
+  float: left;
+  list-style: none;
+  width: 65%;
+}
+
+.nav {
+  float: left;
+  width: 10.7%;
+  border-right: 1px solid white;
+}
+
+.link {
+  text-align: center;
+  width: 11.1111%;
+}
+
+.glass {
+  float: left;
+  height: 21px;
+  border: 0;
+  background: white;
+}
+
+#search {
+  border: 0;
+  padding: 0.16rem;
+  margin-left: 0.5rem;
+}
+
+.logo {
+  height: 25px;
+  text-align: right;
+  padding-right: 5rem;
+}
+
+.sign-in {
+  padding-left: 1rem;
+}
+
+.logo-img {
+  width: 63px;
+}
+
+/*
+* Main
+*/
+
+main {
+  float: left;
+  height: 20rem;
+  margin-bottom: 10rem;
+}
+
+div > h2 {
+  float: left;
+}
+
+div > h5 {
+  float: right;
+  color: #8c8c8c;
+}
+
+main > div {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  float: left;
+}
+
+/*
+* Headline
+*/
+
+.headline {
+  width: 49%;
+  position: relative;
+  float: left;
+} 
+
+.headline img {
+  width: 100%;
+}
+
+.hero-text {
+  position: absolute;
+  z-index: 2;
+  margin: 0.5rem;
+  color: white;
+}
+
+h1.hero-text {
+  bottom: 5rem;
+  font-size: 2rem;
+}
+
+.headline p {
+  bottom: 2.5rem;
+  font-size: 1rem;
+  color: #d3d3d3;
+}
+
+.headline-cat-link {
+  left: 0;
+  bottom: 1rem;
+  font-size: 1rem;
+  color: #d3d3d3;
+}
+
+/*
+* Side Stories
+*/
+
+.side-stories {
+  float: left;
+  width: 49%;
+  position: relative;
+  margin-left: 2%;
+}
+
+.side-story {
+  float: left;
+  width: 49%;
+  position: relative;
+}
+
+.side-story:nth-of-type(odd) {
+  margin-right: 2%;
+}
+
+.side-story:nth-last-of-type(n+3) {
+  margin-bottom: 1%;
+}
+
+.side-story img {
+  width: 100%;
+}
+
+h2.hero-text {
+  bottom: 30%;
+  font-size: 1rem;
+}
+
+.side-cat-link {
+  bottom: 10%;
+  left: 0;
+  color: #d3d3d3;
+}
+
+/*
+* News
+*/
+
+.title-cat-link {
+  color: #4a4a4a;
+  font-size: 1.5rem;
+  display: block;
+  position: relative;
+  float: left;
+  border-left: 4px solid red;
+  margin-bottom: 0.5rem;
+}
+
+.title-cat-link:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.news-stories {
+  float: left;
+  position: relative;
+  height: 20rem;
+}
+
+.news-story {
+  float: left;
+  position: relative;
+  width: 32%;
+  margin-right: 2%;
+}
+
+.news-story:last-of-type {
+  margin-right: 0;
+}
+
+.news-story img {
+  width: 100%;
+}
+
+.news-story h3 {
+  color: #212121;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.news-story p {
+  color: #8c8c8c;
+  font-size: 0.75rem;
+  margin: 0.5rem 0;
+}
+
+.news-cat-link {
+  font-size: 0.75rem;
+}
+
+.news-cat-link:hover {
+  text-decoration: underline;
+  color: #8c8c8c;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.nav {
+  color: white;
+  font-weight: bold;
+}
