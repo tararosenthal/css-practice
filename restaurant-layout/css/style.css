@@ -342,7 +342,7 @@ address .material-icons {
   flex-direction: column;
 }
 
-.open-hours div * {
+.open-hours div > * {
   display: block;
 }
 

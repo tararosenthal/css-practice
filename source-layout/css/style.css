@@ -59,7 +59,7 @@ h5 {
 /*******************************************/
 .header-links,
 nav .button {
-  display: none;
+  visibility: hidden;
 }
 
 nav {
@@ -223,6 +223,7 @@ i {
   .header-links,
   nav .button {
     display: block;
+    visibility: visible;
   }
 
   nav {
